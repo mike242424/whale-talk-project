@@ -1,7 +1,7 @@
 let input = "The boy bought the basketball";
 const vowels = ["a", "e", "i", "o", "u"];
 
-resultsArray = [];
+const resultsArray = [];
 
 for (let i = 0; i < input.length; i++) {
   let element1 = input[i];
