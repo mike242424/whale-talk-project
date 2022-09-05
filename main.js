@@ -4,21 +4,21 @@ const vowels = ["a", "e", "i", "o", "u"];
 const resultsArray = [];
 
 for (let i = 0; i < input.length; i++) {
-  let element1 = input[i];
+  let inputLetter = input[i];
 
-  if (element1 === "e") {
-    resultsArray.push(element1);
+  if (inputLetter === "e") {
+    resultsArray.push(inputLetter);
   }
 
-  if (element1 === "u") {
-    resultsArray.push(element1);
+  if (inputLetter === "u") {
+    resultsArray.push(inputLetter);
   }
 
   for (let j = 0; j < vowels.length; j++) {
-    let element2 = vowels[j];
+    let vowel = vowels[j];
 
-    if (element1 === element2) {
-      resultsArray.push(element2);
+    if (inputLetter === vowel) {
+      resultsArray.push(vowel);
     }
   }
 }
