@@ -6,11 +6,7 @@ const resultsArray = [];
 for (let i = 0; i < input.length; i++) {
   let inputLetter = input[i].toLocaleLowerCase();
 
-  if (inputLetter === "e") {
-    resultsArray.push(inputLetter);
-  }
-
-  if (inputLetter === "u") {
+  if (inputLetter === "e" || inputLetter === "u") {
     resultsArray.push(inputLetter);
   }
 
@@ -23,5 +19,6 @@ for (let i = 0; i < input.length; i++) {
   }
 }
 
-let whaleNoise = resultsArray.join("");
-console.log("Whale Talk: " + whaleNoise.toUpperCase());
+let whaleNoise = resultsArray.join("").toLocaleUpperCase();
+
+console.log("Whale Talk: " + whaleNoise);
